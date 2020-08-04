@@ -2,9 +2,9 @@ body{
      background-color: #500778;
     overflow-x: hidden;
 }
-.img1{
-    width: 100px;
-}  
+.carousel-inner > .item > img {
+     height:500px; 
+}
 .about h1 {
     color: white;
     text-align: center;
@@ -13,5 +13,11 @@ body{
 .about p{
     color: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
 }
