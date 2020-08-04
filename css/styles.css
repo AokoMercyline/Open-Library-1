@@ -1,37 +1,4 @@
-.welcome {
-    background-image: url("../images/header.jpg");
-    background-position: center;
-    align-items: center;
-    background-size: cover;
-    text-align: center;
-    padding-top: 17%;
-    padding-bottom: 17%;
-    color: white;
-    font-weight: 500;
-    font-size: large;
-  }
-  .about{
-    text-align: center;
-    padding: 70px 0;
-    line-height: 1.5;
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 15%;
-  }
-  .services{
-    background-image:url("../images/body.jpg");
-   /* background-position: center center;
-    background-size: cover;
-    background-repeat:no-repeat;
-    text-align: center;
-    padding: 70px 0;
-    line-height: 1.5;
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 15%;
-    color:white;*/
-  }
-    
+
   .column {
     float: left;
     width: 33.33%;
@@ -64,7 +31,7 @@
     display: flex;
     padding-left: 13%;
   }
-  .portfolio h2{
+  .gallery h2{
     text-align: center;
     /*padding: 70px 0;*/
     line-height: 1.5;
@@ -97,97 +64,7 @@
   .image1:hover .overlay {
     opacity:0.5;
   }
-  .do h2{
+h2 {
     text-align: center;
-    /*padding: 70px 0;*/
-    line-height: 1.5;
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 45%;
-  }
-  h2 {
-    text-align:center;
-  }
-  p{
-    text-align:center;
-  }
-  .word{
-    color:white;
-  }
-  footer {
-    text-align: center;
-    float: left;
-    margin-top: 5px;
-    margin-left: 200px;
-  }
-  #text1{
-    width: 90%;
-    height: 50%;
-  }
-  #form{
-    opacity:0.5;
-  }
-  footer{
-    text-align: center;
-    margin-top: 5%;
-    margin-left: 350px;
-  }
-  .span{
-    display: none;
-  }
-  .span1{
-    display: none;
-  }
-  .span2{
-    display: none;
-  }
-  
-  .contact{
-    background-image: url("../images/footer.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-  }
-  .contact h2{
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
-  }
-  input[type=text],input[type=email],#comment{
-    background: transparent;
-    color: rgb(241, 229, 229);
-    font-size: 20px;
-    font-family: 'Copse', serif;
-  }
-  .form-control::-webkit-input-placeholder { 
-    color: rgb(235, 219, 219); 
-  }
-  #MERGE1{
-    width: 30%;
-    margin-left: 18%;
-    margin-right: 30px;
-  }
-  #MERGE0{
-    width: 30%;
-  }
-  #comment{
-    margin-left: 20%;
-    width: 60%;
-  }
-  button{
-    align-items: center;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-  }
-  .class{
-    margin-top:5%;
-  }
-  .btn {
-    background-color: lightgrey;
-    width:90px;
-    padding: 20px;
-    margin:15px;
-  }
+}
+
