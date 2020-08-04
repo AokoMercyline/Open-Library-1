@@ -2,8 +2,8 @@ body{
      background-color: #500778;
     overflow-x: hidden;
 }
-#img1{
-    width: 50px;
+.img1{
+    width: 100px;
 }  
 .about h1 {
     color: white;
