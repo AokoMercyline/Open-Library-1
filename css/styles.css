@@ -87,3 +87,9 @@ button {
     padding-left: 2%;
     margin-left: 35%;
 }
+
+#more {display: none;}
+.read{
+  background-color: bisque;
+  color: black;
+}
