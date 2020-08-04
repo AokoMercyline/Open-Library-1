@@ -1,0 +1,17 @@
+body{
+     background-color: #500778;
+    overflow-x: hidden;
+}
+#img1{
+    width: 50px;
+}  
+.about h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;    
+}
+.about p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
