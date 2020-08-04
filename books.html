@@ -1,20 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="css/books.css" type="text/css">
+  <meta charset="utf-8">
+  <title>Owl-carousel Cards Slider | CodingNepal</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css//books.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <script src="js/jquery-3.5.1.js"></script>
-  <script src="js/books.js"></script>
-  <title>Books</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="js/books.js">
 </head>
 
 <body>
-  <div class="container bg-danger my-3">
+
+<div class=" container bg-info my-3">
+  <div class="slider owl-carousel p-1 my-2">
+
+    <div class="card">
+      <!-- <div class="img">
+        <img src="profile-1.jpeg" alt="">
+      </div> -->
+      <div class="content">
+        <div class="title">
+          Andrew Mathenge</div>
+        <div class="sub-title">
+          Book Title
+        </div>
+        <p class="limit">Oh! My, Spy work was dope! The author never fails to surprise, esp the part where the antagonist turns on his own family.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- <div class="img">
+        <img src="profile-2.jpeg" alt="">
+      </div> -->
+      <div class="content">
+        <div class="title">
+          Casey Ann
+        </div>
+        <div class="sub-title">
+          Book Title
+        </div>
+        <p class="limit">Oh! My, Spy work was dope! The author never fails to surprise, esp the part where the antagonist turns on his own family.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- <div class="img">
+        <img src="profile-3.jpeg" alt="">
+      </div> -->
+      <div class="content">
+        <div class="title">
+          Aoko Mercyline
+        </div>
+        <div class="sub-title">
+          Book Title
+        </div>
+        <p class="limit">Oh! My, Spy work was dope! The author never fails to surprise, esp the part where the antagonist turns on his own family.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- <div class="img">
+        <img src="profile-3.jpeg" alt="">
+      </div> -->
+      <div class="content">
+        <div class="title">
+          Mbaya ziii
+        </div>
+        <div class="sub-title">
+          lupe dupre
+        </div>
+        <p class="limit">Oh! My, Spy work was dope! The author never fails to surprise, esp the part where the antagonist turns on his own family.</p>
+      </div>
+    </div>
 
   </div>
+
+</div>
+  
+  <script>
+    $(".slider").owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000, //2000ms = 2s;
+      autoplayHoverPause: true,
+    });
+  </script>
+
 </body>
 
 </html>
