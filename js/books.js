@@ -4,76 +4,133 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $("#cravenButton").click(function () {
-    $(".bookReview").show();
+    $("#cravenReview").show();
     $(".nameComment").focus();
   })
-  $("#horrorReset").click(function () {
-    $(".bookReview").hide();
+  $("#cravenReset").click(function () {
+    $("#cravenReview").hide();
   })
-  $("#horrorSubmit").click(function (event) {
+  $("#cravenSubmit").click(function (event) {
     event.preventDefault();
 
     var title=$(".cravenTitle").html();
     // alert(title);
-    var name=$(".nameComment").val();
+    var name=$("#cravenNameComment").val();
     // alert(name);
-    var review=$(".reviewComment").val();
+    var review=$("#cravenReviewComment").val();
     // alert(review);
     if (name==="") {
       alert("Enter Name to Continue");
-      $(".nameComment").focus();
+      $("#cravenNameComment").focus();
     }
     else if (review==="") {
       alert("Enter Review to Continue");
-      $(".reviewComment").focus
+      $("#cravenReviewComment").focus
     }
 
     $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
-                            +"<div class=\"title\">"+name+"</div>"+
-                            "<div class=\"sub-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-   
+                            +"<div class=\"title my-1\">"+name+"</div>"+
+                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
+    $("#cravenReset").click();
   });
 });
 
 $(document).ready(function () {
   $("#sheLiesButton").click(function () {
-    $(".bookReview").show();
-    $(".nameComment").focus();
+    $("#liesReview").show();
+    $("#liesNameComment").focus();
   });
-  $("#horrorReset").click(function () {
-    $(".bookReview").hide();
+  $("#liesReset").click(function () {
+    $("#liesReview").hide();
   })
-  $("#horrorSubmit").click(function (event) {
+  $("#liesSubmit").click(function (event) {
     event.preventDefault();
 
+    var title=$(".liesTitle").html();
+    // alert(title);
+    var name=$("#liesNameComment").val();
+    // alert(name);
+    var review=$("#liesReviewComment").val();
+    // alert(review);
+    if (name==="") {
+      alert("Enter Name to Continue");
+      $("#liesNameComment").focus();
+    }
+    else if (review==="") {
+      alert("Enter Review to Continue");
+      $("#liesReviewComment").focus
+    }
+
+    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
+                            +"<div class=\"title my-1\">"+name+"</div>"+
+                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
+    $("#liesReset").click();
   });
 });
 
 $(document).ready(function () {
   $("#shiningButton").click(function () {
-    $(".bookReview").show();
-    $(".nameComment").focus();
+    $("#shiningReview").show();
+    $("#shiningComment").focus();
   });
-  $("#horrorReset").click(function () {
-    $(".bookReview").hide();
+  $("#shiningReset").click(function () {
+    $("#shiningReview").hide();
   })
-  $("#horrorSubmit").click(function (event) {
+  $("#shiningSubmit").click(function (event) {
     event.preventDefault();
 
+    var title=$(".shiningTitle").html();
+    // alert(title);
+    var name=$("#shiningNameComment").val();
+    // alert(name);
+    var review=$("#shiningReviewComment").val();
+    // alert(review);
+    if (name==="") {
+      alert("Enter Name to Continue");
+      $("#shiningNameComment").focus();
+    }
+    else if (review==="") {
+      alert("Enter Review to Continue");
+      $("#shiningReviewComment").focus
+    }
+
+    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
+                            +"<div class=\"title my-1\">"+name+"</div>"+
+                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
+    $("#shiningReset").click();
   });
 });
 
 $(document).ready(function () {
   $("#deepButton").click(function () {
-    $(".bookReview").show();
-    $(".nameComment").focus();
+    $("#deepReview").show();
+    $("#deepComment").focus();
   });
-  $("#horrorReset").click(function () {
-    $(".bookReview").hide();
+  $("#deepReset").click(function () {
+    $("#deepReview").hide();
   })
-  $("#horrorSubmit").click(function (event) {
+  $("#deepSubmit").click(function (event) {
     event.preventDefault();
 
+    var title=$(".deepTitle").html();
+    // alert(title);
+    var name=$("#deepNameComment").val();
+    // alert(name);
+    var review=$("#deepReviewComment").val();
+    // alert(review);
+    if (name==="") {
+      alert("Enter Name to Continue");
+      $("#deepNameComment").focus();
+    }
+    else if (review==="") {
+      alert("Enter Review to Continue");
+      $("#deepReviewComment").focus
+    }
+
+    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
+                            +"<div class=\"title my-1\">"+name+"</div>"+
+                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
+    $("#deepsReset").click();
   });
 })
 
@@ -85,35 +142,3 @@ $(document).ready(function () {
 $(document).ready(function () {
 
 });
-
-// $(document).ready(function(){
-//     $("#cravenHover").hover(function(){
-//       $("#cravenText").toggle();
-//     }, function(){
-//     $("#cravenText").toggle();
-//     });
-//   });
-
-// $(document).ready(function(){
-//     $("#liesHover").hover(function(){
-//       $("#liesText").toggle();
-//     }, function(){
-//     $("#liesText").toggle();
-//     });
-//   });
-
-//   $(document).ready(function(){
-//     $("#deepHover").hover(function(){
-//       $("#deepText").toggle();
-//     }, function(){
-//     $("#deepText").toggle();
-//     });
-//   });
-
-//   $(document).ready(function(){
-//     $("#shiningHover").hover(function(){
-//       $("#shiningText").toggle();
-//     }, function(){
-//     $("#shiningText").toggle();
-//     });
-//   });

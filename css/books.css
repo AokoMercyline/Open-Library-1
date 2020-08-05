@@ -20,7 +20,7 @@ div{
     height: 250px;
 }
 
-#liesText,#deepText,#shiningText,#cravenText{
+#cravenReview,#liesReview,#deepReview,#shiningReview{
   display: none;
 }
 
@@ -30,4 +30,9 @@ div{
 
 .d-flex .card{
   width: 24%;
+}
+
+.card-title{
+  text-transform: capitalize;
+  color: red;
 }
