@@ -28,28 +28,10 @@ $(document).ready(function () {
       $(".reviewComment").focus
     }
 
-    $(".owl-item").prepend("<div class=\"card writes\">"+"<div class=\"content\">"
-                            +"<div class=\"title bukTit\">"+name+"</div>"+
+    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
+                            +"<div class=\"title\">"+name+"</div>"+
                             "<div class=\"sub-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-    // $(".bukTit").text(name);
-    // $(".sub-title").text(title);
-    // $(".limit").text(review);
-// {
-  /* <div class="owl-item cloned" style="width: 307.333px;">
-  <div class="card">
-        <div class="content">
-          <div class="title">
-            Mbaya ziii
-          </div>
-          <div class="sub-title">
-            lupe dupre
-          </div>
-          <p class="limit">Oh! My, Spy work was dope! The author never fails to surprise, esp the part where the
-            antagonist turns on his own family.</p>
-        </div>
-      </div>
-      </div> */
-    // }
+   
   });
 });
 
