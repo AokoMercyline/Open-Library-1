@@ -92,7 +92,7 @@ button {
 .read{
   background-color: white;
   color: black;
-  margin-left: 12.8%;
+  margin-left: 13%;
   width: 58%;
 }
   
@@ -103,4 +103,7 @@ button {
 #myBtn{
   align-items: center;
   margin-left: 42%;
+}
+.gallery {
+  margin-left: 12%;
 }
