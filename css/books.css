@@ -27,6 +27,9 @@ div{
 #cravenReview,#liesReview,#deepReview,#shiningReview{
   display: none;
 }
+#thiefReview,#thugReview,#faultReview,#tweetReview{
+  display: none;
+}
 
 .bookReview{
   display: none;

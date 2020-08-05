@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Books Reviews</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/books.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/try.js"></script>
+</head>
+<body>
+    <div class=" container my-3">
+
+        <section class="young mt-3">
+            <h2 class="text-center text-capitalize">young adult novels</h2>
+            <div class="card-deck">
+              <div class="card">
+                <img src="img/young-adult/book-thief.jpg" class="card-img-top" alt="The Book Thief" 
+                        data-toggle="tooltip" data-placement="top"
+                  title="The Book Thief is a story narrated by a compassionate Death who tells us about Liesel, a girl growing up in Germany during World War II. She steals books, learns to read, and finds comfort in words. ">
+                <div class="card-body">
+                  <h5 class="card-title thiefTitle">The Book Thief</h5>
+                  <p>By Markus Zusak</p>
+                  <div class=" text-center">
+                    <button class="btn btn-primary" id="thiefButton">Review</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/young-adult/The Hate U Give.jpg" class="card-img-top" alt="The Hate You Give"
+                  data-toggle="tooltip" data-placement="top"
+                  title="Starr Carter is constantly switching between two worlds -- the poor, mostly black neighborhood where she lives and the wealthy, mostly white prep school that she attends. The uneasy balance between these worlds is soon shattered when she witnesses the fatal shooting of her childhood best friend at the hands of a police officer.">
+                <div class="card-body">
+                  <h5 class="card-title thugTitle">The Hate U Give</h5>
+                  <p>By Angie Thomas</p>
+                  <div class=" text-center">
+                    <button class="btn btn-primary" id="thugButton">Review</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/young-adult/The_Fault_in_Our_Stars.jpg" class="card-img-top" alt="The Fault in Our Stars" 
+                data-toggle="tooltip" data-placement="top"
+                  title="The Fault in Our Stars is a novel which tells the story of Hazel Grace Lancaster, a 16 year old girl who has had cancer for three years, and Augustus 'Gus' Waters, a 17 year old boy who's now in remission, and once had a tumour in his leg. An unlikely Romance..?">
+                <div class="card-body">
+                  <h5 class="card-title faultTitle">The Fault in Our Stars</h5>
+                  <p>By John Green</p>
+                  <div class=" text-center">
+                    <button class="btn btn-primary" id="faultButton">Review</button>
+                  </div>
+      
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/young-adult/tweet-cute.jpg" id="shiningHover" class="card-img-top" alt="Tweet Cute"
+                  data-toggle="tooltip" data-placement="top"  
+                  title="A witty rom-com reinvention ... with deeply relatable insights on family pressure and growing up.” - Emily Wibberley and Austin Siegemund-Broka, authors of Always Never Yours and If I’m Being Honest “An adorable debut that updates a classic romantic trope with a buzzy twist.">
+                <div class="card-body">
+                  <h5 class="card-title tweetTitle">Tweet Cute</h5>
+                  <p>By Emma Lord</p>
+                  <div class=" text-center">
+                    <button class="btn btn-primary" id="tweetButton">Review</button>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+      
+            <div class=" my-2 bg-info text-dark p-2">
+              <form class=" text-center" id="thiefReview">
+                <div class="form-group">
+                  <label>Enter Your name</label>
+                  <input type="text" class="form-control" id="thiefNameComment" placeholder="Enter Name">
+                  <p class="form-text"><em class="font-weight-bold text-danger">Nicknames and Pen Names also allowed</em></p>
+                </div>
+                <div class="form-group">
+                  <label>Type your Review/Comment</label>
+                  <textarea class="form-control" id="thiefReviewComment" rows="3" maxlength="300"
+                    placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+                </div>
+                <div class=" text-center">
+                  <button type="submit" class="btn btn-success p-2 mx-2" id="thiefSubmit">Submit</button>
+                  <button type="reset" class="btn btn-danger p-2 mx-2" id="thiefReset">Cancel</button>
+                </div>
+              </form>
+              <form class=" text-center" id="thugReview">
+                <div class="form-group">
+                  <label>Enter Your name</label>
+                  <input type="text" class="form-control" id="thugNameComment" placeholder="Enter Name">
+                  <p class="form-text"><em class="font-weight-bold text-danger">Nicknames and Pen Names also allowed</em></p>
+                </div>
+                <div class="form-group">
+                  <label>Type your Review/Comment</label>
+                  <textarea class="form-control" id="thugReviewComment" rows="3" maxlength="300"
+                    placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+                </div>
+                <div class=" text-center">
+                  <button type="submit" class="btn btn-success p-2 mx-2" id="thugSubmit">Submit</button>
+                  <button type="reset" class="btn btn-danger p-2 mx-2" id="thugReset">Cancel</button>
+                </div>
+              </form>
+              <form class=" text-center" id="faultReview">
+                <div class="form-group">
+                  <label>Enter Your name</label>
+                  <input type="text" class="form-control" id="faultNameComment" placeholder="Enter Name">
+                  <p class="form-text"><em class="font-weight-bold text-danger">Nicknames and Pen Names also allowed</em></p>
+                </div>
+                <div class="form-group">
+                  <label>Type your Review/Comment</label>
+                  <textarea class="form-control" id="faultReviewComment" rows="3" maxlength="300"
+                    placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+                </div>
+                <div class=" text-center">
+                  <button type="submit" class="btn btn-success p-2 mx-2" id="faultSubmit">Submit</button>
+                  <button type="reset" class="btn btn-danger p-2 mx-2" id="faultReset">Cancel</button>
+                </div>
+              </form>
+              <form class=" text-center" id="tweetReview">
+                <div class="form-group">
+                  <label>Enter Your name</label>
+                  <input type="text" class="form-control" id="tweetNameComment" placeholder="Enter Name">
+                  <p class="form-text"><em class="font-weight-bold text-danger">Nicknames and Pen Names also allowed</em></p>
+                </div>
+                <div class="form-group">
+                  <label>Type your Review/Comment</label>
+                  <textarea class="form-control" id="tweetReviewComment" rows="3" maxlength="300"
+                    placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+                </div>
+                <div class=" text-center">
+                  <button type="submit" class="btn btn-success p-2 mx-2" id="tweetSubmit">Submit</button>
+                  <button type="reset" class="btn btn-danger p-2 mx-2" id="tweetReset">Cancel</button>
+                </div>
+              </form>
+            </div>
+      
+          </section>
+  
+      <div class="d-flex flex-wrap text-center revWrite">
+  
+        <div class="card m-1 mathenge">
+          <div class="content">
+            <div class="title my-1">
+              Andrew Mathenge</div>
+            <div class="card-title">
+              Book Title
+            </div>
+            <p class="limit">Oh! My, Spy work was dope! The author never fails to surprise, esp the part where the
+              antagonist turns on his own family.</p>
+          </div>
+        </div>
+  
+  
+  
+      </div>
+
+    </div>
+</body>
+</html>
