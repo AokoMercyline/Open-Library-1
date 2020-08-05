@@ -68,7 +68,7 @@ h2 {
     margin-left: 15%;
 }
 body{
-    background-color: #500778;
+    background-color: #9caca5;
     color: white;
 }
 .text {
@@ -90,6 +90,17 @@ button {
 
 #more {display: none;}
 .read{
-  background-color: bisque;
+  background-color: white;
   color: black;
+  margin-left: 12.8%;
+  width: 58%;
+}
+  
+.read p{
+  text-align: center;
+}
+
+#myBtn{
+  align-items: center;
+  margin-left: 42%;
 }
