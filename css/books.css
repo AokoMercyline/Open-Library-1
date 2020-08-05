@@ -13,6 +13,7 @@ body{
 .container{
     overflow: hidden;
     padding: 5px 10px;
+    border-radius: 35px;
 }
 
 div{
@@ -33,6 +34,7 @@ div{
 
 .d-flex .card{
   width: 24%;
+  border-radius: 0px 70px;
 }
 
 .card-title{

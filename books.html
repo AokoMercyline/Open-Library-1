@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Books Reviews</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/books.css">
   <script src="js/jquery-3.5.1.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/books.js"></script>
 </head>
 
@@ -16,13 +13,13 @@
 
   <div class=" container bg-info my-3">
 
-    <section class="horror mt-3">
-      <h2 class=" text-capitalize">horror books</h2>
+    <!-- <section class="horror mt-3">
+      <h2 class="text-center text-capitalize">horror books</h2>
       <div class="card-deck">
         <div class="card">
-          <img src="img/horror/craven-manor.jpg" class="card-img-top" alt="Craven Manor"
-              data-toggle="tooltip" data-placement="top" 
-              title="Some secrets are better left... Daniel is desperate for a fresh start. So when a mysterious figure slides a note under his door offering the position of groundskeeper at an ancient estate, he leaps at the chance, even though it seems too good to be true.">
+          <img src="img/horror/craven-manor.jpg" class="card-img-top" alt="Craven Manor" data-toggle="tooltip"
+            data-placement="top"
+            title="Some secrets are better left... Daniel is desperate for a fresh start. So when a mysterious figure slides a note under his door offering the position of groundskeeper at an ancient estate, he leaps at the chance, even though it seems too good to be true.">
           <div class="card-body">
             <h5 class="card-title cravenTitle">Craven Manor</h5>
             <p>By Darcy Coates</p>
@@ -33,7 +30,7 @@
         </div>
         <div class="card">
           <img src="img/horror/She-Lies-in-Wait.jpg" id="liesHover" class="card-img-top" alt="She Lies in Wait"
-            data-toggle="tooltip" data-placement="top" 
+            data-toggle="tooltip" data-placement="top"
             title="On a hot July night in 1983, six school friends go camping in the forest. Bright and brilliant, they are destined for great things, and young Aurora Jackson is dazzled to be allowed to tag along. Thirty years later, a body is discovered">
           <div class="card-body">
             <h5 class="card-title liesTitle">She Lies in Wait</h5>
@@ -44,28 +41,29 @@
           </div>
         </div>
         <div class="card">
-          <img src="img/horror/the-deep.jpg" class="card-img-top" alt="The Deep"
-              data-toggle="tooltip" data-placement="top" title="Octavia E. Butler meets Marvel’s Black Panther in The Deep, a story rich with Afrofuturism, folklore, and the power of memory, inspired by the Hugo Award–nominated song “The Deep” from Daveed Diggs’s rap group Clipping">
+          <img src="img/horror/the-deep.jpg" class="card-img-top" alt="The Deep" data-toggle="tooltip"
+            data-placement="top"
+            title="Octavia E. Butler meets Marvel’s Black Panther in The Deep, a story rich with Afrofuturism, folklore, and the power of memory, inspired by the Hugo Award–nominated song “The Deep” from Daveed Diggs’s rap group Clipping">
           <div class="card-body">
             <h5 class="card-title deepTitle">The Deep</h5>
             <p>By Alma Katsu</p>
             <div class=" text-center">
               <button class="btn btn-primary" id="deepButton">Review</button>
             </div>
-            
+
           </div>
         </div>
         <div class="card">
           <img src="img/horror/the-shining-king.jpg" id="shiningHover" class="card-img-top" alt="The Shining"
-              data-toggle="tooltip" data-placement="top" 
-              title="The Shining is a horror novel by American author Stephen King. Published in 1977, it is King's third published novel and first hardback bestseller: the success of the book firmly established King as a preeminent author in the horror genre.">
+            data-toggle="tooltip" data-placement="top"
+            title="The Shining is a horror novel by American author Stephen King. Published in 1977, it is King's third published novel and first hardback bestseller: the success of the book firmly established King as a preeminent author in the horror genre.">
           <div class="card-body">
             <h5 class="card-title shiningTitle">The Shining</h5>
             <p>By Stephen King</p>
             <div class=" text-center">
               <button class="btn btn-primary" id="shiningButton">Review</button>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -79,7 +77,8 @@
           </div>
           <div class="form-group">
             <label>Type your Review/Comment</label>
-            <textarea class="form-control" id="cravenReviewComment" rows="3" maxlength="300" placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+            <textarea class="form-control" id="cravenReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
           </div>
           <div class=" text-center">
             <button type="submit" class="btn btn-success p-2 mx-2" id="cravenSubmit">Submit</button>
@@ -94,7 +93,8 @@
           </div>
           <div class="form-group">
             <label>Type your Review/Comment</label>
-            <textarea class="form-control" id="liesReviewComment" rows="3" maxlength="300" placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+            <textarea class="form-control" id="liesReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
           </div>
           <div class=" text-center">
             <button type="submit" class="btn btn-success p-2 mx-2" id="liesSubmit">Submit</button>
@@ -109,7 +109,8 @@
           </div>
           <div class="form-group">
             <label>Type your Review/Comment</label>
-            <textarea class="form-control" id="deepReviewComment" rows="3" maxlength="300" placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+            <textarea class="form-control" id="deepReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
           </div>
           <div class=" text-center">
             <button type="submit" class="btn btn-success p-2 mx-2" id="deepSubmit">Submit</button>
@@ -124,7 +125,380 @@
           </div>
           <div class="form-group">
             <label>Type your Review/Comment</label>
-            <textarea class="form-control" id="shiningReviewComment" rows="3" maxlength="300" placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+            <textarea class="form-control" id="shiningReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="shiningSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="shiningReset">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+
+    <section class="horror mt-3">
+      <h2 class="text-center text-capitalize">horror books</h2>
+      <div class="card-deck">
+        <div class="card">
+          <img src="img/horror/craven-manor.jpg" class="card-img-top" alt="Craven Manor" data-toggle="tooltip"
+            data-placement="top"
+            title="Some secrets are better left... Daniel is desperate for a fresh start. So when a mysterious figure slides a note under his door offering the position of groundskeeper at an ancient estate, he leaps at the chance, even though it seems too good to be true.">
+          <div class="card-body">
+            <h5 class="card-title cravenTitle">Craven Manor</h5>
+            <p>By Darcy Coates</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="cravenButton">Review</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/horror/She-Lies-in-Wait.jpg" id="liesHover" class="card-img-top" alt="She Lies in Wait"
+            data-toggle="tooltip" data-placement="top"
+            title="On a hot July night in 1983, six school friends go camping in the forest. Bright and brilliant, they are destined for great things, and young Aurora Jackson is dazzled to be allowed to tag along. Thirty years later, a body is discovered">
+          <div class="card-body">
+            <h5 class="card-title liesTitle">She Lies in Wait</h5>
+            <p>By Gytha Lodge</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="sheLiesButton">Review</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/horror/the-deep.jpg" class="card-img-top" alt="The Deep" data-toggle="tooltip"
+            data-placement="top"
+            title="Octavia E. Butler meets Marvel’s Black Panther in The Deep, a story rich with Afrofuturism, folklore, and the power of memory, inspired by the Hugo Award–nominated song “The Deep” from Daveed Diggs’s rap group Clipping">
+          <div class="card-body">
+            <h5 class="card-title deepTitle">The Deep</h5>
+            <p>By Alma Katsu</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="deepButton">Review</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/horror/the-shining-king.jpg" id="shiningHover" class="card-img-top" alt="The Shining"
+            data-toggle="tooltip" data-placement="top"
+            title="The Shining is a horror novel by American author Stephen King. Published in 1977, it is King's third published novel and first hardback bestseller: the success of the book firmly established King as a preeminent author in the horror genre.">
+          <div class="card-body">
+            <h5 class="card-title shiningTitle">The Shining</h5>
+            <p>By Stephen King</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="shiningButton">Review</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class=" my-2 bg-info text-dark p-2">
+        <form id="cravenReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="cravenNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="cravenReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="cravenSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="cravenReset">Cancel</button>
+          </div>
+        </form>
+        <form id="liesReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="liesNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="liesReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="liesSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="liesReset">Cancel</button>
+          </div>
+        </form>
+        <form id="deepReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="deepNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="deepReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="deepSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="deepReset">Cancel</button>
+          </div>
+        </form>
+        <form id="shiningReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="shiningNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="shiningReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="shiningSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="shiningReset">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+
+    <section class="horror mt-3">
+      <h2 class="text-center text-capitalize">horror books</h2>
+      <div class="card-deck">
+        <div class="card">
+          <img src="img/horror/craven-manor.jpg" class="card-img-top" alt="Craven Manor" data-toggle="tooltip"
+            data-placement="top"
+            title="Some secrets are better left... Daniel is desperate for a fresh start. So when a mysterious figure slides a note under his door offering the position of groundskeeper at an ancient estate, he leaps at the chance, even though it seems too good to be true.">
+          <div class="card-body">
+            <h5 class="card-title cravenTitle">Craven Manor</h5>
+            <p>By Darcy Coates</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="cravenButton">Review</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/horror/She-Lies-in-Wait.jpg" id="liesHover" class="card-img-top" alt="She Lies in Wait"
+            data-toggle="tooltip" data-placement="top"
+            title="On a hot July night in 1983, six school friends go camping in the forest. Bright and brilliant, they are destined for great things, and young Aurora Jackson is dazzled to be allowed to tag along. Thirty years later, a body is discovered">
+          <div class="card-body">
+            <h5 class="card-title liesTitle">She Lies in Wait</h5>
+            <p>By Gytha Lodge</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="sheLiesButton">Review</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/horror/the-deep.jpg" class="card-img-top" alt="The Deep" data-toggle="tooltip"
+            data-placement="top"
+            title="Octavia E. Butler meets Marvel’s Black Panther in The Deep, a story rich with Afrofuturism, folklore, and the power of memory, inspired by the Hugo Award–nominated song “The Deep” from Daveed Diggs’s rap group Clipping">
+          <div class="card-body">
+            <h5 class="card-title deepTitle">The Deep</h5>
+            <p>By Alma Katsu</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="deepButton">Review</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/horror/the-shining-king.jpg" id="shiningHover" class="card-img-top" alt="The Shining"
+            data-toggle="tooltip" data-placement="top"
+            title="The Shining is a horror novel by American author Stephen King. Published in 1977, it is King's third published novel and first hardback bestseller: the success of the book firmly established King as a preeminent author in the horror genre.">
+          <div class="card-body">
+            <h5 class="card-title shiningTitle">The Shining</h5>
+            <p>By Stephen King</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="shiningButton">Review</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class=" my-2 bg-info text-dark p-2">
+        <form id="cravenReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="cravenNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="cravenReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="cravenSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="cravenReset">Cancel</button>
+          </div>
+        </form>
+        <form id="liesReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="liesNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="liesReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="liesSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="liesReset">Cancel</button>
+          </div>
+        </form>
+        <form id="deepReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="deepNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="deepReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="deepSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="deepReset">Cancel</button>
+          </div>
+        </form>
+        <form id="shiningReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="shiningNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="shiningReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="shiningSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="shiningReset">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+    </section> -->
+
+    <section class="horror mt-3">
+      <h2 class="text-center text-capitalize">horror books</h2>
+      <div class="card-deck">
+        <div class="card">
+          <img src="img/horror/craven-manor.jpg" class="card-img-top" alt="Craven Manor" data-toggle="tooltip"
+            data-placement="top"
+            title="Some secrets are better left... Daniel is desperate for a fresh start. So when a mysterious figure slides a note under his door offering the position of groundskeeper at an ancient estate, he leaps at the chance, even though it seems too good to be true.">
+          <div class="card-body">
+            <h5 class="card-title cravenTitle">Craven Manor</h5>
+            <p>By Darcy Coates</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="cravenButton">Review</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/horror/She-Lies-in-Wait.jpg" id="liesHover" class="card-img-top" alt="She Lies in Wait"
+            data-toggle="tooltip" data-placement="top"
+            title="On a hot July night in 1983, six school friends go camping in the forest. Bright and brilliant, they are destined for great things, and young Aurora Jackson is dazzled to be allowed to tag along. Thirty years later, a body is discovered">
+          <div class="card-body">
+            <h5 class="card-title liesTitle">She Lies in Wait</h5>
+            <p>By Gytha Lodge</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="sheLiesButton">Review</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/horror/the-deep.jpg" class="card-img-top" alt="The Deep" data-toggle="tooltip"
+            data-placement="top"
+            title="Octavia E. Butler meets Marvel’s Black Panther in The Deep, a story rich with Afrofuturism, folklore, and the power of memory, inspired by the Hugo Award–nominated song “The Deep” from Daveed Diggs’s rap group Clipping">
+          <div class="card-body">
+            <h5 class="card-title deepTitle">The Deep</h5>
+            <p>By Alma Katsu</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="deepButton">Review</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/horror/the-shining-king.jpg" id="shiningHover" class="card-img-top" alt="The Shining"
+            data-toggle="tooltip" data-placement="top"
+            title="The Shining is a horror novel by American author Stephen King. Published in 1977, it is King's third published novel and first hardback bestseller: the success of the book firmly established King as a preeminent author in the horror genre.">
+          <div class="card-body">
+            <h5 class="card-title shiningTitle">The Shining</h5>
+            <p>By Stephen King</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="shiningButton">Review</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class=" my-2 bg-info text-dark p-2">
+        <form id="cravenReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="cravenNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="cravenReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="cravenSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="cravenReset">Cancel</button>
+          </div>
+        </form>
+        <form id="liesReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="liesNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="liesReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="liesSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="liesReset">Cancel</button>
+          </div>
+        </form>
+        <form id="deepReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="deepNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="deepReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="deepSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="deepReset">Cancel</button>
+          </div>
+        </form>
+        <form id="shiningReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="shiningNameComment" placeholder="Enter Name">
+            <small class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="shiningReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
           </div>
           <div class=" text-center">
             <button type="submit" class="btn btn-success p-2 mx-2" id="shiningSubmit">Submit</button>
@@ -136,7 +510,7 @@
     </section>
 
     <div class="d-flex flex-wrap text-center revWrite">
-      
+
       <div class="card m-1 mathenge">
         <div class="content">
           <div class="title my-1">
