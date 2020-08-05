@@ -1,21 +1,24 @@
 body{
-     background-color: #500778;
+    background-color: #500778;
     overflow-x: hidden;
 }
 .carousel-inner > .item > img {
-     height:500px; 
+    height:500px; 
 }
 .about h1 {
     color: white;
     text-align: center;
-    font-size: 50px;    
+    font-size: 50px;   
+    font-family: 'Font Name', serif;
+ 
 }
 .about p{
     color: white;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     padding-left: 5%;
     padding-right: 5%;
+    font-family: 'Font Name', serif;
 
 }
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
