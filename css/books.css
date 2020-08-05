@@ -2,14 +2,17 @@
     box-sizing: border-box;
 }
 
-html,body{
-  height: 100%;
+body{
+  min-height: 100vh;
+  margin: 0px;
+  display: block;
   background:lightblue;
+  overflow: auto;
 }
 
 .container{
     overflow: hidden;
-    padding: 5px 0px;
+    padding: 5px 10px;
 }
 
 div{

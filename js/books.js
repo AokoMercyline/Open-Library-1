@@ -1,11 +1,14 @@
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
-
+//craven book review
 $(document).ready(function () {
   $("#cravenButton").click(function () {
     $("#cravenReview").show();
-    $(".nameComment").focus();
+    $("#liesReview").hide();
+    $("#shiningReview").hide();
+    $("#deepReview").hide();
+    $("#cravenNameComment").focus();
   })
   $("#cravenReset").click(function () {
     $("#cravenReview").hide();
@@ -22,10 +25,12 @@ $(document).ready(function () {
     if (name==="") {
       alert("Enter Name to Continue");
       $("#cravenNameComment").focus();
+      $("#cravenReset").click();
     }
     else if (review==="") {
       alert("Enter Review to Continue");
-      $("#cravenReviewComment").focus
+      $("#cravenReviewComment").focus();
+      $("#cravenReset").click();
     }
 
     $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
@@ -34,10 +39,13 @@ $(document).ready(function () {
     $("#cravenReset").click();
   });
 });
-
+//she lies book review
 $(document).ready(function () {
   $("#sheLiesButton").click(function () {
     $("#liesReview").show();
+    $("#cravenReview").hide();
+    $("#shiningReview").hide();
+    $("#deepReview").hide();
     $("#liesNameComment").focus();
   });
   $("#liesReset").click(function () {
@@ -55,10 +63,12 @@ $(document).ready(function () {
     if (name==="") {
       alert("Enter Name to Continue");
       $("#liesNameComment").focus();
+      $("#liesReset").click();
     }
     else if (review==="") {
       alert("Enter Review to Continue");
-      $("#liesReviewComment").focus
+      $("#liesReviewComment").focus();
+      $("#liesReset").click();
     }
 
     $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
@@ -67,11 +77,14 @@ $(document).ready(function () {
     $("#liesReset").click();
   });
 });
-
+//shining book review
 $(document).ready(function () {
   $("#shiningButton").click(function () {
     $("#shiningReview").show();
-    $("#shiningComment").focus();
+    $("#liesReview").hide();
+    $("#cravenReview").hide();
+    $("#deepReview").hide();
+    $("#shiningNameComment").focus();
   });
   $("#shiningReset").click(function () {
     $("#shiningReview").hide();
@@ -88,10 +101,12 @@ $(document).ready(function () {
     if (name==="") {
       alert("Enter Name to Continue");
       $("#shiningNameComment").focus();
+      $("#shiningReset").click();
     }
     else if (review==="") {
       alert("Enter Review to Continue");
       $("#shiningReviewComment").focus
+      $("#shiningReset").click();
     }
 
     $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
@@ -100,11 +115,14 @@ $(document).ready(function () {
     $("#shiningReset").click();
   });
 });
-
+//the deep book review
 $(document).ready(function () {
   $("#deepButton").click(function () {
     $("#deepReview").show();
-    $("#deepComment").focus();
+    $("#liesReview").hide();
+    $("#shiningReview").hide();
+    $("#cravenReview").hide();
+    $("#deepNameComment").focus();
   });
   $("#deepReset").click(function () {
     $("#deepReview").hide();
@@ -121,24 +139,30 @@ $(document).ready(function () {
     if (name==="") {
       alert("Enter Name to Continue");
       $("#deepNameComment").focus();
+      $("#deepsReset").click();
     }
     else if (review==="") {
       alert("Enter Review to Continue");
-      $("#deepReviewComment").focus
+      $("#deepReviewComment").focus();
+      $("#deepsReset").click();
     }
 
-    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
-                            +"<div class=\"title my-1\">"+name+"</div>"+
-                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
+    // $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
+    //                         +"<div class=\"title my-1\">"+name+"</div>"+
+    //                         "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
+                           
+    // $( "<div class=\"card m-1\">"+"<div class=\"content\">"+"<div class=\"title my-1\">"+name+"</div>"+"<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>" ).insertAfter( ".mathenge" );
+    $( "<div class=\"card m-1\">"+"<div class=\"content\">"+"<div class=\"title my-1\">"+name+"</div>"+"<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>" ).insertBefore( ".mathenge" );
+
     $("#deepsReset").click();
   });
 })
 
 
-$(document).ready(function () {
-
-});
-
-$(document).ready(function () {
-
-});
+// $(document).ready(function(){
+//   $("#liesReview").hover(function(){
+//     // $("#hovershow7").fadeToggle(750);
+//   }, function(){
+//     $("#liesReview").toggle();
+//   });
+// });
