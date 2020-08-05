@@ -82,3 +82,7 @@ div{
 .card-img-top{
     height: 250px;
 }
+
+#liesText,#deepText,#shiningText,#cravenText{
+  display: none;
+}

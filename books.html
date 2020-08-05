@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
 
 <head>
@@ -10,7 +9,7 @@
   <script src="js/jquery-3.5.1.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <link rel="stylesheet" href="js/books.js">
+  <script src="js/books.js"></script>
 </head>
 
 <body>
@@ -20,39 +19,52 @@
     <section class="horror mt-3">
       <div class="card-deck">
         <div class="card">
-          <img src="img/horror/craven-manor.jpg" class="card-img-top" alt="Craven Manor">
+          <img src="img/horror/craven-manor.jpg" class="card-img-top" id="cravenHover" alt="Craven Manor"
+              data-toggle="tooltip" data-placement="top" 
+              title="Some secrets are better left... Daniel is desperate for a fresh start. So when a mysterious figure slides a note under his door offering the position of groundskeeper at an ancient estate, he leaps at the chance, even though it seems too good to be true.">
           <div class="card-body">
             <h5 class="card-title">Craven Manor</h5>
-            <p class="card-title">Darcy Coates</p>
-            <p class="card-text">Some secrets are better left... Daniel is desperate for a fresh start. So when a mysterious figure slides a note under his door offering the position of groundskeeper at an ancient estate, he leaps at the chance, even though it seems too good to be true.</p>
-            <button class="btn btn-primary" id="craven">Review</button>
+            <p>By <span class="card-title" id="cravenAuthor">Darcy Coates</span></p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="craven">Review</button>
+            </div>
           </div>
         </div>
         <div class="card">
-          <img src="img/horror/She-Lies-in-Wait.jpg" class="card-img-top" alt="She Lies in Wait">
+          <img src="img/horror/She-Lies-in-Wait.jpg" id="liesHover" class="card-img-top" alt="She Lies in Wait"
+            data-toggle="tooltip" data-placement="top" 
+            title="On a hot July night in 1983, six school friends go camping in the forest. Bright and brilliant, they are destined for great things, and young Aurora Jackson is dazzled to be allowed to tag along. Thirty years later, a body is discovered">
           <div class="card-body">
             <h5 class="card-title">She Lies in Wait</h5>
-            <p class="card-title">Gytha Lodge</p>
-            <p class="card-text">On a hot July night in 1983, six school friends go camping in the forest. Bright and brilliant, they are destined for great things, and young Aurora Jackson is dazzled to be allowed to tag along. Thirty years later, a body is discovered</p>
-            <button class="btn btn-primary" id="sheLies">Review</button>
+            <p>By <span class="card-title" id="liesAuthor">Gytha Lodge</span></p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="sheLies">Review</button>
+            </div>
           </div>
         </div>
         <div class="card">
-          <img src="img/horror/the-deep.jpg" class="card-img-top" alt="The Deep">
+          <img src="img/horror/the-deep.jpg" id="deepHover" class="card-img-top" alt="The Deep"
+              data-toggle="tooltip" data-placement="top" title="Octavia E. Butler meets Marvel’s Black Panther in The Deep, a story rich with Afrofuturism, folklore, and the power of memory, inspired by the Hugo Award–nominated song “The Deep” from Daveed Diggs’s rap group Clipping">
           <div class="card-body">
             <h5 class="card-title">The Deep</h5>
-            <p class="card-title">Alma Katsu</p>
-            <p class="card-text">Octavia E. Butler meets Marvel’s Black Panther in The Deep, a story rich with Afrofuturism, folklore, and the power of memory, inspired by the Hugo Award–nominated song “The Deep” from Daveed Diggs’s rap group Clipping</p>
-            <button class="btn btn-primary" id="theDeep">Review</button>
+            <p>By <span class="card-title" id="deepAuthor">Alma Katsu</span></p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="theDeep">Review</button>
+            </div>
+            
           </div>
         </div>
         <div class="card">
-          <img src="img/horror/the-shining-king.jpg" class="card-img-top" alt="The Shining">
+          <img src="img/horror/the-shining-king.jpg" id="shiningHover" class="card-img-top" alt="The Shining"
+              data-toggle="tooltip" data-placement="top" 
+              title="The Shining is a horror novel by American author Stephen King. Published in 1977, it is King's third published novel and first hardback bestseller: the success of the book firmly established King as a preeminent author in the horror genre.">
           <div class="card-body">
             <h5 class="card-title">The Shining</h5>
-            <p class="card-title" id="king">Stephen King</p>
-            <p class="card-text">The Shining is a horror novel by American author Stephen King. Published in 1977, it is King's third published novel and first hardback bestseller: the success of the book firmly established King as a preeminent author in the horror genre.</p>
-            <button class="btn btn-primary" id="theShining">Review</button>
+            <p>By <span class="card-title" id="shiningAuthor">Stephen King</span></p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="theShining">Review</button>
+            </div>
+            
           </div>
         </div>
       </div>
