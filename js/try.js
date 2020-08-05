@@ -1,156 +1,156 @@
-//thief book review
+//happy book review
 $(document).ready(function () {
-    $("#thiefButton").click(function () {
-      $("#thiefReview").show();
-      $("#thugReview").hide();
-      $("#faultReview").hide();
-      $("#tweetReview").hide();
-      $("#thiefNameComment").focus();
+    $("#happyButton").click(function () {
+      $("#happyReview").show();
+      $("#monkReview").hide();
+      $("#posReview").hide();
+      $("#richReview").hide();
+      $("#happyNameComment").focus();
     })
-    $("#thiefReset").click(function () {
-      $("#thiefReview").hide();
+    $("#happyReset").click(function () {
+      $("#happyReview").hide();
     })
-    $("#thiefSubmit").click(function (event) {
+    $("#happySubmit").click(function (event) {
       event.preventDefault();
   
-      var title=$(".thiefTitle").html();
+      var title=$(".happyTitle").html();
       // alert(title);
-      var name=$("#thiefNameComment").val();
+      var name=$("#happyNameComment").val();
       // alert(name);
-      var review=$("#thiefReviewComment").val();
+      var review=$("#happyReviewComment").val();
       // alert(review);
       if (name==="") {
         alert("Enter Name to Continue! Try again!");
-        $("#thiefNameComment").focus();
+        $("#happyNameComment").focus();
         // $("#thiefReset").click();
       }
       else if (review==="") {
         alert("Cannot Have Empty Review. Try again!");
-        $("#thiefReviewComment").focus();
+        $("#happyReviewComment").focus();
         // $("#thiefReset").click();
       }else{
   
       $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
                               +"<div class=\"title my-1\">"+name+"</div>"+
                               "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-      $("#thiefReset").click();
+      $("#happyReset").click();
       }
     });
   });
-//thug book
+//monk book
   $(document).ready(function () {
-    $("#thugButton").click(function () {
-      $("#thugReview").show();
-      $("#thiefReview").hide();
-      $("#faultReview").hide();
-      $("#tweetReview").hide();
-      $("#thugNameComment").focus();
+    $("#monkButton").click(function () {
+      $("#monkReview").show();
+      $("#happyReview").hide();
+      $("#posReview").hide();
+      $("#richReview").hide();
+      $("#monkNameComment").focus();
     })
-    $("#thugReset").click(function () {
-      $("#thugReview").hide();
+    $("#monkReset").click(function () {
+      $("#monkReview").hide();
     })
-    $("#thugSubmit").click(function (event) {
+    $("#monkSubmit").click(function (event) {
       event.preventDefault();
   
-      var title=$(".thugTitle").html();
+      var title=$(".monkTitle").html();
       // alert(title);
-      var name=$("#thugNameComment").val();
+      var name=$("#monkNameComment").val();
       // alert(name);
-      var review=$("#thugReviewComment").val();
+      var review=$("#monkReviewComment").val();
       // alert(review);
       if (name==="") {
         alert("Enter Name to Continue! Try again!");
-        $("#thugNameComment").focus();
+        $("#monkNameComment").focus();
         // $("#thugReset").click();
       }
       else if (review==="") {
         alert("Cannot Have Empty Review. Try again!");
-        $("#thugReviewComment").focus();
+        $("#monkReviewComment").focus();
         // $("#thugReset").click();
       }else{
   
       $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
                               +"<div class=\"title my-1\">"+name+"</div>"+
                               "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-      $("#thugReset").click();
+      $("#monkReset").click();
       }
     });
   });
-//fault book review
+//positive book review
   $(document).ready(function () {
-    $("#faultButton").click(function () {
-      $("#faultReview").show();
-      $("#thugReview").hide();
-      $("#thiefReview").hide();
-      $("#tweetReview").hide();
-      $("#thiefNameComment").focus();
+    $("#posButton").click(function () {
+      $("#posReview").show();
+      $("#happyReview").hide();
+      $("#monkReview").hide();
+      $("#richReview").hide();
+      $("#posNameComment").focus();
     })
-    $("#faultReset").click(function () {
-      $("#faultReview").hide();
+    $("#posReset").click(function () {
+      $("#posReview").hide();
     })
-    $("#faultSubmit").click(function (event) {
+    $("#posSubmit").click(function (event) {
       event.preventDefault();
   
-      var title=$(".faultTitle").html();
+      var title=$(".posTitle").html();
       // alert(title);
-      var name=$("#faultNameComment").val();
+      var name=$("#posNameComment").val();
       // alert(name);
-      var review=$("#faultReviewComment").val();
+      var review=$("#posReviewComment").val();
       // alert(review);
       if (name==="") {
         alert("Enter Name to Continue! Try again!");
-        $("#faultNameComment").focus();
+        $("#posNameComment").focus();
         // $("#faultReset").click();
       }
       else if (review==="") {
         alert("Cannot Have Empty Review. Try again!");
-        $("#faultReviewComment").focus();
+        $("#posReviewComment").focus();
         // $("#faultReset").click();
       }else{
   
       $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
                               +"<div class=\"title my-1\">"+name+"</div>"+
                               "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-      $("#faultReset").click();
+      $("#posReset").click();
       }
     });
   });
-//tweet cute review
+//rich cute review
   $(document).ready(function () {
-    $("#tweetButton").click(function () {
-      $("#tweetReview").show();
-      $("#thugReview").hide();
-      $("#faultReview").hide();
-      $("#thiefReview").hide();
-      $("#tweetNameComment").focus();
+    $("#richButton").click(function () {
+      $("#richReview").show();
+      $("#happyReview").hide();
+      $("#posReview").hide();
+      $("#monkReview").hide();
+      $("#richNameComment").focus();
     })
-    $("#tweetReset").click(function () {
-      $("#tweetReview").hide();
+    $("#richReset").click(function () {
+      $("#richReview").hide();
     })
-    $("#tweetSubmit").click(function (event) {
+    $("#richSubmit").click(function (event) {
       event.preventDefault();
   
-      var title=$(".tweetTitle").html();
+      var title=$(".richTitle").html();
       // alert(title);
-      var name=$("#tweetNameComment").val();
+      var name=$("#richNameComment").val();
       // alert(name);
-      var review=$("#tweetReviewComment").val();
+      var review=$("#richReviewComment").val();
       // alert(review);
       if (name==="") {
         alert("Enter Name to Continue! Try again!");
-        $("#tweetNameComment").focus();
+        $("#richNameComment").focus();
         // $("#tweetReset").click();
       }
       else if (review==="") {
         alert("Cannot Have Empty Review. Try again!");
-        $("#tweetReviewComment").focus();
+        $("#richReviewComment").focus();
         // $("#tweetReset").click();
       }else{
   
       $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
                               +"<div class=\"title my-1\">"+name+"</div>"+
                               "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-      $("#tweetReset").click();
+      $("#richReset").click();
       }
     });
   });

@@ -16,27 +16,27 @@ $(document).ready(function () {
   $("#cravenSubmit").click(function (event) {
     event.preventDefault();
 
-    var title=$(".cravenTitle").html();
+    var title = $(".cravenTitle").html();
     // alert(title);
-    var name=$("#cravenNameComment").val();
+    var name = $("#cravenNameComment").val();
     // alert(name);
-    var review=$("#cravenReviewComment").val();
+    var review = $("#cravenReviewComment").val();
     // alert(review);
-    if (name==="") {
+    if (name === "") {
       alert("Enter Name to Continue! Try again!");
       $("#cravenNameComment").focus();
       // $("#cravenReset").click();
     }
-    else if (review==="") {
+    else if (review === "") {
       alert("Cannot Have Empty Review. Try again!");
       $("#cravenReviewComment").focus();
       $("#cravenReset").click();
-    }else{
+    } else {
 
-    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
-                            +"<div class=\"title my-1\">"+name+"</div>"+
-                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-    $("#cravenReset").click();
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
+      $("#cravenReset").click();
     }
   });
 });
@@ -55,28 +55,28 @@ $(document).ready(function () {
   $("#liesSubmit").click(function (event) {
     event.preventDefault();
 
-    var title=$(".liesTitle").html();
+    var title = $(".liesTitle").html();
     // alert(title);
-    var name=$("#liesNameComment").val();
+    var name = $("#liesNameComment").val();
     // alert(name);
-    var review=$("#liesReviewComment").val();
+    var review = $("#liesReviewComment").val();
     // alert(review);
-    if (name==="") {
+    if (name === "") {
       alert("Enter Name to Continue! Try again!");
       $("#liesNameComment").focus();
       // $("#liesReset").click();
     }
-    else if (review==="") {
+    else if (review === "") {
       alert("Cannot Have Empty Review. Try again!");
       $("#liesReviewComment").focus();
       // $("#liesReset").click();
-    }else{
+    } else {
 
-    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
-                            +"<div class=\"title my-1\">"+name+"</div>"+
-                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-    $("#liesReset").click();
-  }
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
+      $("#liesReset").click();
+    }
   });
 });
 //shining book review
@@ -94,27 +94,27 @@ $(document).ready(function () {
   $("#shiningSubmit").click(function (event) {
     event.preventDefault();
 
-    var title=$(".shiningTitle").html();
+    var title = $(".shiningTitle").html();
     // alert(title);
-    var name=$("#shiningNameComment").val();
+    var name = $("#shiningNameComment").val();
     // alert(name);
-    var review=$("#shiningReviewComment").val();
+    var review = $("#shiningReviewComment").val();
     // alert(review);
-    if (name==="") {
+    if (name === "") {
       alert("Enter Name to Continue! Try again!");
       $("#shiningNameComment").focus();
       // $("#shiningReset").click();
     }
-    else if (review==="") {
+    else if (review === "") {
       alert("Cannot Have Empty Review. Try again!");
       $("#shiningReviewComment").focus
       $("#shiningReset").click();
-    }else{
+    } else {
 
-    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
-                            +"<div class=\"title my-1\">"+name+"</div>"+
-                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-    $("#shiningReset").click();
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
+      $("#shiningReset").click();
     }
   });
 });
@@ -133,31 +133,31 @@ $(document).ready(function () {
   $("#deepSubmit").click(function (event) {
     event.preventDefault();
 
-    var title=$(".deepTitle").html();
+    var title = $(".deepTitle").html();
     // alert(title);
-    var name=$("#deepNameComment").val();
+    var name = $("#deepNameComment").val();
     // alert(name);
-    var review=$("#deepReviewComment").val();
+    var review = $("#deepReviewComment").val();
     // alert(review);
-    if (name==="") {
+    if (name === "") {
       alert("Enter Name to Continue! Try again!");
       $("#deepNameComment").focus();
       // $("#deepsReset").click();
     }
-    else if (review==="") {
+    else if (review === "") {
       alert("Cannot Have Empty Review. Try again!");
       $("#deepReviewComment").focus();
       // $("#deepsReset").click();
-    }else{
+    } else {
 
-    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
-                            +"<div class=\"title my-1\">"+name+"</div>"+
-                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-                           
-    // $( "<div class=\"card m-1\">"+"<div class=\"content\">"+"<div class=\"title my-1\">"+name+"</div>"+"<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>" ).insertAfter( ".mathenge" );
-    // $( "<div class=\"card m-1\">"+"<div class=\"content\">"+"<div class=\"title my-1\">"+name+"</div>"+"<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>" ).insertBefore( ".mathenge" );
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
 
-    $("#deepsReset").click();
+      // $( "<div class=\"card m-1\">"+"<div class=\"content\">"+"<div class=\"title my-1\">"+name+"</div>"+"<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>" ).insertAfter( ".mathenge" );
+      // $( "<div class=\"card m-1\">"+"<div class=\"content\">"+"<div class=\"title my-1\">"+name+"</div>"+"<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>" ).insertBefore( ".mathenge" );
+
+      $("#deepsReset").click();
     }
   });
 })
@@ -177,27 +177,27 @@ $(document).ready(function () {
   $("#thiefSubmit").click(function (event) {
     event.preventDefault();
 
-    var title=$(".thiefTitle").html();
+    var title = $(".thiefTitle").html();
     // alert(title);
-    var name=$("#thiefNameComment").val();
+    var name = $("#thiefNameComment").val();
     // alert(name);
-    var review=$("#thiefReviewComment").val();
+    var review = $("#thiefReviewComment").val();
     // alert(review);
-    if (name==="") {
+    if (name === "") {
       alert("Enter Name to Continue! Try again!");
       $("#thiefNameComment").focus();
       // $("#thiefReset").click();
     }
-    else if (review==="") {
+    else if (review === "") {
       alert("Cannot Have Empty Review. Try again!");
       $("#thiefReviewComment").focus();
       // $("#thiefReset").click();
-    }else{
+    } else {
 
-    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
-                            +"<div class=\"title my-1\">"+name+"</div>"+
-                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-    $("#thiefReset").click();
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
+      $("#thiefReset").click();
     }
   });
 });
@@ -216,27 +216,27 @@ $(document).ready(function () {
   $("#thugSubmit").click(function (event) {
     event.preventDefault();
 
-    var title=$(".thugTitle").html();
+    var title = $(".thugTitle").html();
     // alert(title);
-    var name=$("#thugNameComment").val();
+    var name = $("#thugNameComment").val();
     // alert(name);
-    var review=$("#thugReviewComment").val();
+    var review = $("#thugReviewComment").val();
     // alert(review);
-    if (name==="") {
+    if (name === "") {
       alert("Enter Name to Continue! Try again!");
       $("#thugNameComment").focus();
       // $("#thugReset").click();
     }
-    else if (review==="") {
+    else if (review === "") {
       alert("Cannot Have Empty Review. Try again!");
       $("#thugReviewComment").focus();
       // $("#thugReset").click();
-    }else{
+    } else {
 
-    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
-                            +"<div class=\"title my-1\">"+name+"</div>"+
-                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-    $("#thugReset").click();
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
+      $("#thugReset").click();
     }
   });
 });
@@ -255,27 +255,27 @@ $(document).ready(function () {
   $("#faultSubmit").click(function (event) {
     event.preventDefault();
 
-    var title=$(".faultTitle").html();
+    var title = $(".faultTitle").html();
     // alert(title);
-    var name=$("#faultNameComment").val();
+    var name = $("#faultNameComment").val();
     // alert(name);
-    var review=$("#faultReviewComment").val();
+    var review = $("#faultReviewComment").val();
     // alert(review);
-    if (name==="") {
+    if (name === "") {
       alert("Enter Name to Continue! Try again!");
       $("#faultNameComment").focus();
       // $("#faultReset").click();
     }
-    else if (review==="") {
+    else if (review === "") {
       alert("Cannot Have Empty Review. Try again!");
       $("#faultReviewComment").focus();
       // $("#faultReset").click();
-    }else{
+    } else {
 
-    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
-                            +"<div class=\"title my-1\">"+name+"</div>"+
-                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-    $("#faultReset").click();
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
+      $("#faultReset").click();
     }
   });
 });
@@ -294,36 +294,184 @@ $(document).ready(function () {
   $("#tweetSubmit").click(function (event) {
     event.preventDefault();
 
-    var title=$(".tweetTitle").html();
+    var title = $(".tweetTitle").html();
     // alert(title);
-    var name=$("#tweetNameComment").val();
+    var name = $("#tweetNameComment").val();
     // alert(name);
-    var review=$("#tweetReviewComment").val();
+    var review = $("#tweetReviewComment").val();
     // alert(review);
-    if (name==="") {
+    if (name === "") {
       alert("Enter Name to Continue! Try again!");
       $("#tweetNameComment").focus();
       // $("#tweetReset").click();
     }
-    else if (review==="") {
+    else if (review === "") {
       alert("Cannot Have Empty Review. Try again!");
       $("#tweetReviewComment").focus();
       // $("#tweetReset").click();
-    }else{
+    } else {
 
-    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
-                            +"<div class=\"title my-1\">"+name+"</div>"+
-                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
-    $("#tweetReset").click();
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
+      $("#tweetReset").click();
     }
   });
 });
 
+//happy book review
+$(document).ready(function () {
+  $("#happyButton").click(function () {
+    $("#happyReview").show();
+    $("#monkReview").hide();
+    $("#posReview").hide();
+    $("#richReview").hide();
+    $("#happyNameComment").focus();
+  })
+  $("#happyReset").click(function () {
+    $("#happyReview").hide();
+  })
+  $("#happySubmit").click(function (event) {
+    event.preventDefault();
 
-// $(document).ready(function(){
-//   $("#liesReview").hover(function(){
-//     // $("#hovershow7").fadeToggle(750);
-//   }, function(){
-//     $("#liesReview").toggle();
-//   });
-// });
+    var title = $(".happyTitle").html();
+    // alert(title);
+    var name = $("#happyNameComment").val();
+    // alert(name);
+    var review = $("#happyReviewComment").val();
+    // alert(review);
+    if (name === "") {
+      alert("Enter Name to Continue! Try again!");
+      $("#happyNameComment").focus();
+      // $("#thiefReset").click();
+    }
+    else if (review === "") {
+      alert("Cannot Have Empty Review. Try again!");
+      $("#happyReviewComment").focus();
+      // $("#thiefReset").click();
+    } else {
+
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
+      $("#happyReset").click();
+    }
+  });
+});
+//monk book
+$(document).ready(function () {
+  $("#monkButton").click(function () {
+    $("#monkReview").show();
+    $("#happyReview").hide();
+    $("#posReview").hide();
+    $("#richReview").hide();
+    $("#monkNameComment").focus();
+  })
+  $("#monkReset").click(function () {
+    $("#monkReview").hide();
+  })
+  $("#monkSubmit").click(function (event) {
+    event.preventDefault();
+
+    var title = $(".monkTitle").html();
+    // alert(title);
+    var name = $("#monkNameComment").val();
+    // alert(name);
+    var review = $("#monkReviewComment").val();
+    // alert(review);
+    if (name === "") {
+      alert("Enter Name to Continue! Try again!");
+      $("#monkNameComment").focus();
+      // $("#thugReset").click();
+    }
+    else if (review === "") {
+      alert("Cannot Have Empty Review. Try again!");
+      $("#monkReviewComment").focus();
+      // $("#thugReset").click();
+    } else {
+
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
+      $("#monkReset").click();
+    }
+  });
+});
+//positive book review
+$(document).ready(function () {
+  $("#posButton").click(function () {
+    $("#posReview").show();
+    $("#happyReview").hide();
+    $("#monkReview").hide();
+    $("#richReview").hide();
+    $("#posNameComment").focus();
+  })
+  $("#posReset").click(function () {
+    $("#posReview").hide();
+  })
+  $("#posSubmit").click(function (event) {
+    event.preventDefault();
+
+    var title = $(".posTitle").html();
+    // alert(title);
+    var name = $("#posNameComment").val();
+    // alert(name);
+    var review = $("#posReviewComment").val();
+    // alert(review);
+    if (name === "") {
+      alert("Enter Name to Continue! Try again!");
+      $("#posNameComment").focus();
+      // $("#faultReset").click();
+    }
+    else if (review === "") {
+      alert("Cannot Have Empty Review. Try again!");
+      $("#posReviewComment").focus();
+      // $("#faultReset").click();
+    } else {
+
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
+      $("#posReset").click();
+    }
+  });
+});
+//rich cute review
+$(document).ready(function () {
+  $("#richButton").click(function () {
+    $("#richReview").show();
+    $("#happyReview").hide();
+    $("#posReview").hide();
+    $("#monkReview").hide();
+    $("#richNameComment").focus();
+  })
+  $("#richReset").click(function () {
+    $("#richReview").hide();
+  })
+  $("#richSubmit").click(function (event) {
+    event.preventDefault();
+
+    var title = $(".richTitle").html();
+    // alert(title);
+    var name = $("#richNameComment").val();
+    // alert(name);
+    var review = $("#richReviewComment").val();
+    // alert(review);
+    if (name === "") {
+      alert("Enter Name to Continue! Try again!");
+      $("#richNameComment").focus();
+      // $("#tweetReset").click();
+    }
+    else if (review === "") {
+      alert("Cannot Have Empty Review. Try again!");
+      $("#richReviewComment").focus();
+      // $("#tweetReset").click();
+    } else {
+
+      $(".revWrite").prepend("<div class=\"card m-1\">" + "<div class=\"content\">"
+        + "<div class=\"title my-1\">" + name + "</div>" +
+        "<div class=\"card-title\">" + title + "</div>" + "<p class=\"limit\">" + review + "</p>" + "</div>" + "</div>");
+      $("#richReset").click();
+    }
+  });
+});

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Books Reviews</title>
@@ -13,13 +14,137 @@
 
   <div class=" container bg-info my-3">
 
+    <!--inspiration section-->
+    <section class="inspiration mt-3">
+      <h2 class="text-center text-capitalize">inspirational reads</h2>
+      <div class="card-deck">
+        <div class="card">
+          <img src="img/Inspiration/Happiness-Project.jpg" class="card-img-top" alt="The Happiness Project"
+            data-toggle="tooltip" data-placement="top"
+            title="The Happiness Project synthesizes the wisdom of the ages with current scientific research, as Rubin brings readers along on her year to greater happiness. In fact, Rubin's “happiness project” no longer describes just a book or a blog; it's a movement.">
+          <div class="card-body">
+            <h5 class="card-title happyTitle"><br> The Happiness Project</h5>
+            <p>By Gretchen Rubin</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="happyButton">Review</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/Inspiration/ferrari.jpg" class="card-img-top" alt="The Monk who sold his Ferrari"
+            data-toggle="tooltip" data-placement="top"
+            title="The Monk Who Sold His Ferrari tells the extraordinary story of Julian Mantle, a lawyer forced to confront the spiritual crisis of his out-of-balance life, and the subsequent wisdom that he gains on a life-changing odyssey that enables him to create a life of passion, purpose and peace">
+          <div class="card-body">
+            <h5 class="card-title monkTitle">The Monk who sold his Ferrari</h5>
+            <p>By Robin Sharma</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="monkButton">Review</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/Inspiration/positive-think.jpg" class="card-img-top" alt="The Power of positive thinking"
+            data-toggle="tooltip" data-placement="top"
+            title="The Power Of Positive Thinking will show you that the roots of success lie in the mind and teach you how to believe in yourself, break the habit of worrying, and take control of your life by taking control of your thoughts and changing your attitude">
+          <div class="card-body">
+            <h5 class="card-title posTitle">The Power of Positive Thinking</h5>
+            <p>By Norman Vincent Peale</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="posButton">Review</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/Inspiration/rich-dad.jpg" id="shiningHover" class="card-img-top" alt="Rich Dad Poor Dad"
+            data-toggle="tooltip" data-placement="top"
+            title="Rich Dad Poor Dad is about Robert Kiyosaki and his two dads—his real father (poor dad) and the father of his best friend (rich dad)—and the ways in which both men shaped his thoughts about money and investing. You don't need to earn a high income to be rich. Rich people make money work for them.">
+          <div class="card-body">
+            <h5 class="card-title richTitle"><br> Rich Dad Poor Dad</h5>
+            <p>By Emma Lord</p>
+            <div class=" text-center">
+              <button class="btn btn-primary" id="richButton">Review</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class=" my-2 bg-info text-dark p-2">
+        <form class=" text-center" id="happyReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="happyNameComment" placeholder="Enter Name">
+            <p class="form-text"><em class="font-weight-bold text-danger">Nicknames and Pen Names also allowed</em></p>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="happyReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="happySubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="happyReset">Cancel</button>
+          </div>
+        </form>
+        <form class=" text-center" id="monkReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="monkNameComment" placeholder="Enter Name">
+            <p class="form-text"><em class="font-weight-bold text-danger">Nicknames and Pen Names also allowed</em></p>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="monkReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="monkSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="monkReset">Cancel</button>
+          </div>
+        </form>
+        <form class=" text-center" id="posReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="posNameComment" placeholder="Enter Name">
+            <p class="form-text"><em class="font-weight-bold text-danger">Nicknames and Pen Names also allowed</em></p>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="posReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="posSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="posReset">Cancel</button>
+          </div>
+        </form>
+        <form class=" text-center" id="richReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control" id="richNameComment" placeholder="Enter Name">
+            <p class="form-text"><em class="font-weight-bold text-danger">Nicknames and Pen Names also allowed</em></p>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control" id="richReviewComment" rows="3" maxlength="300"
+              placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="richSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="richReset">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
     <!--Section Young Adult-->
     <section class="young mt-3">
       <h2 class="text-center text-capitalize">young adult novels</h2>
       <div class="card-deck">
         <div class="card">
-          <img src="img/young-adult/book-thief.jpg" class="card-img-top" alt="The Book Thief" 
-                  data-toggle="tooltip" data-placement="top"
+          <img src="img/young-adult/book-thief.jpg" class="card-img-top" alt="The Book Thief" data-toggle="tooltip"
+            data-placement="top"
             title="The Book Thief is a story narrated by a compassionate Death who tells us about Liesel, a girl growing up in Germany during World War II. She steals books, learns to read, and finds comfort in words. ">
           <div class="card-body">
             <h5 class="card-title thiefTitle">The Book Thief</h5>
@@ -42,8 +167,8 @@
           </div>
         </div>
         <div class="card">
-          <img src="img/young-adult/The_Fault_in_Our_Stars.jpg" class="card-img-top" alt="The Fault in Our Stars" 
-          data-toggle="tooltip" data-placement="top"
+          <img src="img/young-adult/The_Fault_in_Our_Stars.jpg" class="card-img-top" alt="The Fault in Our Stars"
+            data-toggle="tooltip" data-placement="top"
             title="The Fault in Our Stars is a novel which tells the story of Hazel Grace Lancaster, a 16 year old girl who has had cancer for three years, and Augustus 'Gus' Waters, a 17 year old boy who's now in remission, and once had a tumour in his leg. An unlikely Romance..?">
           <div class="card-body">
             <h5 class="card-title faultTitle">The Fault in Our Stars</h5>
@@ -55,8 +180,8 @@
           </div>
         </div>
         <div class="card">
-          <img src="img/young-adult/tweet-cute.jpg" id="shiningHover" class="card-img-top" alt="Tweet Cute"
-            data-toggle="tooltip" data-placement="top"  
+          <img src="img/young-adult/tweet-cute.jpg" class="card-img-top" alt="Tweet Cute"
+            data-toggle="tooltip" data-placement="top"
             title="A witty rom-com reinvention ... with deeply relatable insights on family pressure and growing up.” - Emily Wibberley and Austin Siegemund-Broka, authors of Always Never Yours and If I’m Being Honest “An adorable debut that updates a classic romantic trope with a buzzy twist.">
           <div class="card-body">
             <h5 class="card-title tweetTitle">Tweet Cute</h5>
@@ -179,7 +304,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="img/horror/the-shining-king.jpg" id="shiningHover" class="card-img-top" alt="The Shining"
+          <img src="img/horror/the-shining-king.jpg" class="card-img-top" alt="The Shining"
             data-toggle="tooltip" data-placement="top"
             title="The Shining is a horror novel by American author Stephen King. Published in 1977, it is King's third published novel and first hardback bestseller: the success of the book firmly established King as a preeminent author in the horror genre.">
           <div class="card-body">

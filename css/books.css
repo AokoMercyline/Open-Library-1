@@ -30,6 +30,9 @@ div{
 #thiefReview,#thugReview,#faultReview,#tweetReview{
   display: none;
 }
+#happyReview,#monkReview,#posReview,#richReview{
+  display: none;
+}
 
 .bookReview{
   display: none;
