@@ -9,7 +9,7 @@ body{
     color: white;
     text-align: center;
     font-size: 50px;   
-    font-family: 'Font Name', serif;
+    font-family: 'Tangerine', serif;
  
 }
 .about p{
@@ -18,8 +18,7 @@ body{
     font-size: 22px;
     padding-left: 5%;
     padding-right: 5%;
-    font-family: 'Font Name', serif;
-
+    font-family: 'Tangerine', serif;
 }
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
