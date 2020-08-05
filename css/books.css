@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html,body{
@@ -9,7 +9,6 @@ html,body{
 
 .container{
     overflow: hidden;
-    height: 100vh;
 }
 
 .slider{
