@@ -1,5 +1,5 @@
 *{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 html,body{
@@ -84,5 +84,9 @@ div{
 }
 
 #liesText,#deepText,#shiningText,#cravenText{
+  display: none;
+}
+
+.bookReview{
   display: none;
 }

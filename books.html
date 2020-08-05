@@ -17,16 +17,17 @@
   <div class=" container bg-info my-3">
 
     <section class="horror mt-3">
+
       <div class="card-deck">
         <div class="card">
-          <img src="img/horror/craven-manor.jpg" class="card-img-top" id="cravenHover" alt="Craven Manor"
+          <img src="img/horror/craven-manor.jpg" class="card-img-top" alt="Craven Manor"
               data-toggle="tooltip" data-placement="top" 
               title="Some secrets are better left... Daniel is desperate for a fresh start. So when a mysterious figure slides a note under his door offering the position of groundskeeper at an ancient estate, he leaps at the chance, even though it seems too good to be true.">
           <div class="card-body">
-            <h5 class="card-title">Craven Manor</h5>
-            <p>By <span class="card-title" id="cravenAuthor">Darcy Coates</span></p>
+            <h5 class="card-title cravenTitle">Craven Manor</h5>
+            <p>By Darcy Coates</p>
             <div class=" text-center">
-              <button class="btn btn-primary" id="craven">Review</button>
+              <button class="btn btn-primary" id="cravenButton">Review</button>
             </div>
           </div>
         </div>
@@ -35,10 +36,10 @@
             data-toggle="tooltip" data-placement="top" 
             title="On a hot July night in 1983, six school friends go camping in the forest. Bright and brilliant, they are destined for great things, and young Aurora Jackson is dazzled to be allowed to tag along. Thirty years later, a body is discovered">
           <div class="card-body">
-            <h5 class="card-title">She Lies in Wait</h5>
-            <p>By <span class="card-title" id="liesAuthor">Gytha Lodge</span></p>
+            <h5 class="card-title liesTitle">She Lies in Wait</h5>
+            <p>By Gytha Lodge</p>
             <div class=" text-center">
-              <button class="btn btn-primary" id="sheLies">Review</button>
+              <button class="btn btn-primary" id="sheLiesButton">Review</button>
             </div>
           </div>
         </div>
@@ -46,10 +47,10 @@
           <img src="img/horror/the-deep.jpg" id="deepHover" class="card-img-top" alt="The Deep"
               data-toggle="tooltip" data-placement="top" title="Octavia E. Butler meets Marvel’s Black Panther in The Deep, a story rich with Afrofuturism, folklore, and the power of memory, inspired by the Hugo Award–nominated song “The Deep” from Daveed Diggs’s rap group Clipping">
           <div class="card-body">
-            <h5 class="card-title">The Deep</h5>
-            <p>By <span class="card-title" id="deepAuthor">Alma Katsu</span></p>
+            <h5 class="card-title deepTitle">The Deep</h5>
+            <p>By Alma Katsu</p>
             <div class=" text-center">
-              <button class="btn btn-primary" id="theDeep">Review</button>
+              <button class="btn btn-primary" id="deepButton">Review</button>
             </div>
             
           </div>
@@ -59,14 +60,32 @@
               data-toggle="tooltip" data-placement="top" 
               title="The Shining is a horror novel by American author Stephen King. Published in 1977, it is King's third published novel and first hardback bestseller: the success of the book firmly established King as a preeminent author in the horror genre.">
           <div class="card-body">
-            <h5 class="card-title">The Shining</h5>
-            <p>By <span class="card-title" id="shiningAuthor">Stephen King</span></p>
+            <h5 class="card-title shiningTitle">The Shining</h5>
+            <p>By Stephen King</p>
             <div class=" text-center">
-              <button class="btn btn-primary" id="theShining">Review</button>
+              <button class="btn btn-primary" id="shiningButton">Review</button>
             </div>
             
           </div>
         </div>
+      </div>
+
+      <div class=" my-2 bg-info text-dark p-2">
+        <form class="bookReview">
+          <div class="form-group">
+            <label>Enter Your name</label>
+            <input type="text" class="form-control nameComment" placeholder="Enter Name">
+            <small id="nameCommentHelp" class="form-text text-muted">Nicknames and Pen Names also allowed</small>
+          </div>
+          <div class="form-group">
+            <label>Type your Review/Comment</label>
+            <textarea class="form-control reviewComment" rows="3" maxlength="300" placeholder="Enter Review/Comment (max 300 characters)" required></textarea>
+          </div>
+          <div class=" text-center">
+            <button type="submit" class="btn btn-success p-2 mx-2" id="horrorSubmit">Submit</button>
+            <button type="reset" class="btn btn-danger p-2 mx-2" id="horrorReset">Cancel</button>
+          </div>
+        </form>
       </div>
 
     </section>
@@ -74,9 +93,6 @@
     <div class="text-center slider owl-carousel p-1 my-2">
 
       <div class="card">
-        <!-- <div class="img">
-        <img src="profile-1.jpeg" alt="">
-      </div> -->
         <div class="content">
           <div class="title">
             Andrew Mathenge</div>
@@ -89,9 +105,6 @@
       </div>
 
       <div class="card">
-        <!-- <div class="img">
-        <img src="profile-2.jpeg" alt="">
-      </div> -->
         <div class="content">
           <div class="title">
             Casey Ann
@@ -105,9 +118,6 @@
       </div>
 
       <div class="card">
-        <!-- <div class="img">
-        <img src="profile-3.jpeg" alt="">
-      </div> -->
         <div class="content">
           <div class="title">
             Aoko Mercyline
@@ -121,9 +131,6 @@
       </div>
 
       <div class="card">
-        <!-- <div class="img">
-        <img src="profile-3.jpeg" alt="">
-      </div> -->
         <div class="content">
           <div class="title">
             Mbaya ziii
@@ -143,8 +150,8 @@
   <script>
     $(".slider").owlCarousel({
       loop: true,
-      autoplay: true,
-      autoplayTimeout: 2000, //2000ms = 2s;
+      // autoplay: true,
+      // autoplayTimeout: 2000, //2000ms = 2s;
       autoplayHoverPause: true,
     });
   </script>
