@@ -23,20 +23,21 @@ $(document).ready(function () {
     var review=$("#cravenReviewComment").val();
     // alert(review);
     if (name==="") {
-      alert("Enter Name to Continue");
+      alert("Enter Name to Continue! Try again!");
       $("#cravenNameComment").focus();
-      $("#cravenReset").click();
+      // $("#cravenReset").click();
     }
     else if (review==="") {
-      alert("Enter Review to Continue");
+      alert("Cannot Have Empty Review. Try again!");
       $("#cravenReviewComment").focus();
       $("#cravenReset").click();
-    }
+    }else{
 
     $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
                             +"<div class=\"title my-1\">"+name+"</div>"+
                             "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
     $("#cravenReset").click();
+    }
   });
 });
 //she lies book review
@@ -61,20 +62,21 @@ $(document).ready(function () {
     var review=$("#liesReviewComment").val();
     // alert(review);
     if (name==="") {
-      alert("Enter Name to Continue");
+      alert("Enter Name to Continue! Try again!");
       $("#liesNameComment").focus();
-      $("#liesReset").click();
+      // $("#liesReset").click();
     }
     else if (review==="") {
-      alert("Enter Review to Continue");
+      alert("Cannot Have Empty Review. Try again!");
       $("#liesReviewComment").focus();
-      $("#liesReset").click();
-    }
+      // $("#liesReset").click();
+    }else{
 
     $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
                             +"<div class=\"title my-1\">"+name+"</div>"+
                             "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
     $("#liesReset").click();
+  }
   });
 });
 //shining book review
@@ -99,20 +101,21 @@ $(document).ready(function () {
     var review=$("#shiningReviewComment").val();
     // alert(review);
     if (name==="") {
-      alert("Enter Name to Continue");
+      alert("Enter Name to Continue! Try again!");
       $("#shiningNameComment").focus();
-      $("#shiningReset").click();
+      // $("#shiningReset").click();
     }
     else if (review==="") {
-      alert("Enter Review to Continue");
+      alert("Cannot Have Empty Review. Try again!");
       $("#shiningReviewComment").focus
       $("#shiningReset").click();
-    }
+    }else{
 
     $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
                             +"<div class=\"title my-1\">"+name+"</div>"+
                             "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
     $("#shiningReset").click();
+    }
   });
 });
 //the deep book review
@@ -137,24 +140,25 @@ $(document).ready(function () {
     var review=$("#deepReviewComment").val();
     // alert(review);
     if (name==="") {
-      alert("Enter Name to Continue");
+      alert("Enter Name to Continue! Try again!");
       $("#deepNameComment").focus();
-      $("#deepsReset").click();
+      // $("#deepsReset").click();
     }
     else if (review==="") {
-      alert("Enter Review to Continue");
+      alert("Cannot Have Empty Review. Try again!");
       $("#deepReviewComment").focus();
-      $("#deepsReset").click();
-    }
+      // $("#deepsReset").click();
+    }else{
 
-    // $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
-    //                         +"<div class=\"title my-1\">"+name+"</div>"+
-    //                         "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
+    $(".revWrite").prepend("<div class=\"card m-1\">"+"<div class=\"content\">"
+                            +"<div class=\"title my-1\">"+name+"</div>"+
+                            "<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>");
                            
     // $( "<div class=\"card m-1\">"+"<div class=\"content\">"+"<div class=\"title my-1\">"+name+"</div>"+"<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>" ).insertAfter( ".mathenge" );
-    $( "<div class=\"card m-1\">"+"<div class=\"content\">"+"<div class=\"title my-1\">"+name+"</div>"+"<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>" ).insertBefore( ".mathenge" );
+    // $( "<div class=\"card m-1\">"+"<div class=\"content\">"+"<div class=\"title my-1\">"+name+"</div>"+"<div class=\"card-title\">"+title+"</div>"+"<p class=\"limit\">"+review+"</p>"+"</div>"+"</div>" ).insertBefore( ".mathenge" );
 
     $("#deepsReset").click();
+    }
   });
 })
 
