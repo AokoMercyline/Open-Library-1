@@ -13,13 +13,15 @@
   
   .row {
     display: flex;
-    padding-left: 20%;
+    padding-left: 1%;
   }
-  .column1 {
-    float: left;
-    width: 22%;
-    padding: 2px;
-  }
+
+.col-sm{
+  padding: 2px;
+ margin-left: 2%;
+ margin-bottom: 2%;
+
+}
   
   .row::after {
     content: "";
@@ -29,7 +31,7 @@
   
   .row1 {
     display: flex;
-    padding-left: 13%;
+    padding-left: 1%;
   }
   .gallery h2{
     text-align: center;
@@ -92,8 +94,8 @@ button {
 .read{
   background-color: white;
   color: black;
-  margin-left: 13%;
-  width: 58%;
+  margin-left: 8%;
+  width: 80%;
 }
   
 .read p{
@@ -105,5 +107,6 @@ button {
   margin-left: 42%;
 }
 .gallery {
-  margin-left: 12%;
+  margin-left: 5%;
 }
+
