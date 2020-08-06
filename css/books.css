@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  margin: 0px;
+  display: block;
+  background:lightgray;
+  overflow: auto;
+}
+
+.container{
+    overflow: hidden;
+    padding: 5px 10px;
+    border-radius: 35px;
+}
+
+div{
+    overflow: hidden;
+}
+
+.card-img-top{
+    height: 250px;
+}
+
+#cravenReview,#liesReview,#deepReview,#shiningReview{
+  display: none;
+}
+#thiefReview,#thugReview,#faultReview,#tweetReview{
+  display: none;
+}
+#happyReview,#monkReview,#posReview,#richReview{
+  display: none;
+}
+
+.bookReview{
+  display: none;
+}
+
+.d-flex .card{
+  width: 24%;
+  border-radius: 0px 70px;
+}
+
+.card-title{
+  text-transform: capitalize;
+  color: red;
+}
