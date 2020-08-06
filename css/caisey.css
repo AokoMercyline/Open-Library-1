@@ -105,7 +105,7 @@ button {
 
 #myBtn{
   align-items: center;
-  margin-left: 42%;
+  /* margin-left: 42%; */
 }
 .gallery {
   margin: auto;
