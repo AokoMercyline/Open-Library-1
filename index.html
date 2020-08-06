@@ -8,9 +8,14 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--mailChimp-->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+  <!--mailChimp-->
   <script src="js/jquery-3.5.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="js/caisey.js"></script>
+  <script src="js/scripts.js"></script>
   <title>Whispering Stories</title>
   <link rel="stylesheet" href="css/juliet.css" type="text/css">
   <link rel="stylesheet" href="css/caisey.css">
@@ -24,9 +29,9 @@
 
     <!--navbar-->
     <nav id="nav-bar">
-        <a href="index.html"><i class="fa fa-home" aria-hidden="true">Home</i></a> </li>
-       <a href="books.html"><i class="fa fa-share-alt" aria-hidden="true"></i>Review</a> </li>
-        <a href="#footer"><i class="fa fa-phone" aria-hidden="true"></i>Contacts</a> </li>
+      <a href="index.html"><i class="fa fa-home" aria-hidden="true" id="homey">Home</i></a>
+      <a href="books.html"><i class="fa fa-share-alt" aria-hidden="true"></i>Review</a>
+      <a href="#footer"><i class="fa fa-phone" aria-hidden="true"></i>Contacts</a>
     </nav>
     <!--carousel intro-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -219,24 +224,52 @@
     </div>
     <!--footer-->
     <footer id="footer">
-      <div class="links">
-        <div class="p-2"><img src="img/twitter.png" alt=""> </div>
-        <div class="p-2"><img src="img/dribble.png" alt=""> </div>
-        <div class="p-2"><img src="img/facebook.png" alt=""> </div>
-        <div class="p-2"><img src="img/g_plus.png" alt=""> </div>
-        <div class="p-2"><img src="img/skype.png" alt=""> </div>
-        <div class="p-2"><img src="img/stumble_upon.png" alt=""> </div>
-        <div class="p-2"><img src="img/behance.png" alt=""> </div>
-        <div class="p-2"><img src="img/pinterest.png" alt=""> </div>
-        <div class="p-2"><img src="img/flickr.png" alt=""></div>
+      <form action="https://gmail.us17.list-manage.com/subscribe/post?u=32a89ffbf4997fa75416ed2c2&amp;id=e590fa9987"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="flexy validate"
+        target="_blank" novalidate>
+        <div class=" inputs">
+          <div class="enters">
+            <input type="text" class="form-control bg-transparent" id="MERGE1" name="MERGE1"
+              placeholder=" Enter your Name..." required>
+          </div>
+          <div class="enters">
+            <input type="email" class="form-control bg-transparent" name="MERGE0" id="MERGE0"
+              placeholder="Enter your Email.." required>
+          </div>
+          <div class="enters">
+            <textarea class="form-control bg-transparent" name="MERGE2" id="MERGE2"
+              placeholder="Type to us Your message here.." rows="4" required></textarea>
+            <input type="submit" id="mailChimpSubmit" class=" btn-primary btn-lg my-2" value="Send">
+          </div>
+        </div>
+      </form>
+      <div class="flexy">
+        <div>
+          <h2>Contact Us Here Anytime</h2>
+        </div>
+        <div class="links">
+          <div class="p-2"><img src="img/twitter.png" alt=""> </div>
+          <div class="p-2"><img src="img/dribble.png" alt=""> </div>
+          <div class="p-2"><img src="img/facebook.png" alt=""> </div>
+          <div class="p-2"><img src="img/g_plus.png" alt=""> </div>
+          <div class="p-2"><img src="img/skype.png" alt=""> </div>
+          <div class="p-2"><img src="img/stumble_upon.png" alt=""> </div>
+          <div class="p-2"><img src="img/behance.png" alt=""> </div>
+          <div class="p-2"><img src="img/pinterest.png" alt=""> </div>
+          <div class="p-2"><img src="img/flickr.png" alt=""></div>
+        </div>
+        <div>
+          <p>Copyright &copy;Whispering Stories<br> 2020</p>
+        </div>
+        <div>
+          <a href="#homey">Back to Top</a>
+        </div>
       </div>
-      <div>
-        <p>Copyright &copy;Whispering Stories<br> 2020</p>
-      </div>
-      
+
     </footer>
- 
+
   </div>
 
 </body>
+
 </html>
