@@ -1,0 +1,27 @@
+body{
+    background-color: #9CACA5;
+    overflow-x: hidden;
+}
+
+.about h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;   
+    font-family: 'Tangerine', serif;
+ 
+}
+.about p{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: serif;
+}
+
+.carousel-inner {
+    height: 400px;
+    min-height:400px;
+    line-height: 400px;
+    margin-top: 5%
+}
