@@ -39,7 +39,7 @@
     line-height: 1.5;
     display: inline-block;
     vertical-align: middle;
-    padding-left: 45%;
+    /* padding-left: 45%; */
   }
   .image1{
     position:relative;
@@ -67,7 +67,7 @@
     opacity:0.8;
   }
 h2 {
-    margin-left: 15%;
+    /* margin-left: 15%; */
 }
 body{
     background-color: #9caca5;
