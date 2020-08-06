@@ -2,8 +2,8 @@ body{
     background-color: #9CACA5;
     overflow-x: hidden;
 }
-.carousel-inner > .item > img {
-    height:500px; 
+.carousel-img {
+    height:50px; 
 }
 .about h1 {
     color: white;
@@ -20,6 +20,8 @@ body{
     padding-right: 5%;
     font-family: serif;
 }
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
+.carousel-inner{
+    height: 400px;
+    min-height: 400px;
+    line-height: 400px;
 }
